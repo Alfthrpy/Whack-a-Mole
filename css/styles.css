@@ -58,3 +58,22 @@ body{
 .tanah.muncul .tikus{
     top: 0;
 }
+/* Aturan CSS untuk layar berukuran kecil (misalnya, smartphone) */
+@media screen and (max-width: 600px) {
+    .container {
+      width: 100%; /* Mengisi lebar layar penuh pada layar kecil */
+    }
+  
+    .tanah {
+      width: 100%; /* Mengisi lebar layar penuh pada layar kecil */
+    }
+  
+    .tanah::after {
+      background-size: 100%; /* Sesuaikan ukuran latar belakang */
+    }
+  
+    .tikus {
+      top: 80px; /* Sesuaikan posisi tikus pada layar kecil */
+    }
+  }
+  
